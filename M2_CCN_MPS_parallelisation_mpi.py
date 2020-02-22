@@ -55,7 +55,8 @@ def calculate_sqrt_diff_norm(matrix_snippet, B_matrix):
 
 # Calculates the normalized difference via the absolute value. This function
 # was created with the objective of comparing the performance of this
-# program vs. the calculation provided in the example code (using sqrt)
+# program vs. the calculation provided in the example code (using sqrt).
+# As it is, the lines concerned are commented for each node.
 def calculate_abs_diff_norm(matrix_snippet, B_matrix):
     abs_diff_norm = 0.0
     for i in range(B_matrix.shape[0]):
@@ -204,7 +205,7 @@ while(converge == False):
 ###############################################################################
 
 
-# Reconstitution de la matrice finale et affichage de son contenu et de ses
+# Reconstruction of the final matrix and display of its contents and its
 # dimensions
 final_matrix = build_final_matrix(new_snippet)
 display_final_matrix(final_matrix)
